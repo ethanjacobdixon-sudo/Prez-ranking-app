@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -101,7 +102,7 @@ repeating-linear-gradient(90deg,transparent,transparent 79px,rgba(196,146,42,0.0
 .sp2{flex:1;min-width:52px;text-align:center;padding:6px 2px;border-radius:8px;border:1px solid var(--border);background:var(--surface2)}
 .sn{font-size:16px;font-weight:600;color:var(--text);font-family:'Cormorant Garamond',serif}
 .sl{font-size:8px;color:var(--muted);display:block;margin-top:2px;line-height:1.3;font-family:'JetBrains Mono',monospace;letter-spacing:.3px}
-.bd{padding:13px 14px;max-height:70vh;overflow-y:auto}
+.bd{padding:13px 14px;max-height:70vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
 .bd::-webkit-scrollbar{width:4px}
 .bd::-webkit-scrollbar-track{background:var(--surface2)}
 .bd::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
@@ -126,9 +127,9 @@ repeating-linear-gradient(90deg,transparent,transparent 79px,rgba(196,146,42,0.0
 @media (max-width: 680px) {
   #sp { position: fixed; right: 0; top: 0; bottom: 0; z-index: 100; width: 0 !important; transition: none; }
   #sp.open { width: 100vw !important; }
-  #pw2 { width: 100vw; max-width: 100vw; padding: 0; height: 100vh; overflow-y: auto; }
-  #pi2 { border-radius: 0; height: 100vh; border: none; position: static; }
-  .bd { max-height: none; }
+  #pw2 { width: 100vw; max-width: 100vw; padding: 0; height: 100vh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  #pi2 { border-radius: 0; height: auto; min-height: 100vh; border: none; position: static; }
+  .bd { max-height: none; overflow-y: visible; }
 }
 </style>
 </head>
