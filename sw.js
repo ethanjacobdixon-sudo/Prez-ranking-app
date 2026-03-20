@@ -1,7 +1,7 @@
 // Claude's Presidential Rankings — Service Worker
 // Caches the app shell for full offline use
 
-const CACHE_NAME = 'presidential-rankings-v1';
+const CACHE_NAME = 'presidential-rankings-v2';
 
 // All files to cache on install
 const CACHE_FILES = [
